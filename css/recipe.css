@@ -1,0 +1,60 @@
+
+
+
+#container-recipe{
+    display: flex;
+    margin-top: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-1{
+    flex: 1;
+}
+.container-1 h3{
+    text-align: center;
+}
+.container-2,.container-2 img{
+    flex: 3;
+    /* min-width: 400px;
+    max-width: 700px; */
+}
+.container-2 h3{
+    text-align: center;
+}
+#title h1{
+    text-align: center;
+}
+.navbar-brand:hover{
+    text-decoration: underline;
+}
+@media(max-width: 500px){
+    #container-info{
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2{
+        /* width: 220px; */
+        flex:1;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .container-2 h3,.container-2 p{
+        width: 220px;
+    }
+    .container-2 img{
+        width: 200px; 
+       
+    } */
+    .container-1{
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

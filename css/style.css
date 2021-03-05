@@ -1,0 +1,36 @@
+
+.container-card{
+    position: relative;
+    
+}
+.container-card img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+}
+.delete{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+.edit{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#card-text:hover{
+    color: rgb(235, 230, 230);
+    text-align: center;
+    text-decoration: underline;
+}
+
