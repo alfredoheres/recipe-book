@@ -27,15 +27,10 @@
     text-align: center;
     color: white;
     cursor: pointer;
-    font: oblique bold 70% cursive;
 }
 #card-text:hover{
     color: rgb(235, 230, 230);
     text-align: center;
     text-decoration: underline;
 }
-#recomendation{
-    font-size: x-large;
-}
-
 

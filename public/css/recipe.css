@@ -18,7 +18,6 @@
 }
 .container-1 h3{
     text-align: center;
-    font-size: x-large;
 }
 .container-2,.container-2 img{
     flex: 3;
@@ -27,18 +26,12 @@
 }
 .container-2 h3{
     text-align: center;
-    font-size: x-large;
 }
 #title h1{
     text-align: center;
-    font-size: x-large;
 }
 .navbar-brand:hover{
     text-decoration: underline;
-}
-p{
-    font-style: italic;
-    font-size: 110%;
 }
 @media(max-width: 500px){
     #container-info{

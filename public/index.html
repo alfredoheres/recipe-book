@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
-    <link rel="shortcut icon" href="https://e7.pngegg.com/pngimages/805/734/png-clipart-book-black-and-white-book-white-text.png"/>
-
 
     <!------------------------------ BOOTWATCH THEME ------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
@@ -26,28 +24,38 @@
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item logged-out" style="display:none;">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#signinModal">Iniciar Sesión</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#signinModal">Sign In</a>
             </li>
             <li class="nav-item logged-out" style="display:none;">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Registrarse</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
             </li>
             <li class="nav-item admin new-recipe" style="display:none;">
               <a class="nav-link" href="new-recipe.html">Agregar receta</a>
             </li>
             <li class="nav-item logged-in" style="display:none;">
-              <a class="nav-link" href="#" id="logout">Cerrar Sesión</a>
+              <a class="nav-link" href="#" id="logout">Log Out</a>
             </li>
           </ul>
         </div>
       </nav>
-      
+      <!----------------------------- MAIN CONTENT --------------------------------->
+
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <ul class="list-group posts">
+              
+            </ul>
+          </div>
+        </div>
+      </div>
       <!----------------------------- SIGN UP MODAL FORM --------------------------->
 
       <div class="modal" id="signupModal">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Registrarse</h5>
+              <h5 class="modal-title">Sign Up</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -60,7 +68,7 @@
                 <div class="form-group">
                     <input type="password" id="signup-password" class="form-control" placeholder="password"required>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrarse</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
             </form>
             </div>
           </div>
@@ -73,7 +81,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Iniciar Sesión</h5>
+              <h5 class="modal-title">Sign In</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -86,19 +94,15 @@
                     <div class="form-group">
                         <input type="password" id="login-password" class="form-control" placeholder="password"required>
                     </div>
-                    <button type="submit" class="btn btn-secondary btn-block">Iniciar Sesión</button>
-                    <button type="button" class="btn btn-info btn-block" id="googleLogin">Iniciar Sesión con Google</button>
+                    <button type="submit" class="btn btn-secondary btn-block">Log in</button>
+                    <button type="button" class="btn btn-info btn-block" id="googleLogin">Log in width Google</button>
                 </form>
             </div>
           </div>
         </div>
       </div>
 
-      <!----------------------------- MAIN CONTENT --------------------------------->
 
-      <div class="container p-4">
-        <h2 id="recomendation" class="text-center logged-out" style="display:none;">INICIA SESION PARA EDITAR</h2>
-      </div>
 
       <div class="container col-12 row-8" id="recipes-container">
               

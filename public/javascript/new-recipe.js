@@ -35,10 +35,8 @@ document.querySelector("#new-recipe-form").addEventListener(`submit`, (e)=>{
           storageRef.child(`recipe-images/`+name+`/`+ image.name).getDownloadURL().then(async function(url) {
             // Insert url into an <img> tag to "download"
             imageURL=url;
-            // alert("Espere mientras guardamos los datos");
             let salvardatos= await saveNewRecipe(name,ingredients,instructions,imageURL,imageReference);
             let reset= await document.querySelector("#new-recipe-form").reset;
-            
             let redireccionar = await regresarAHome();
             // window.location.href = "index.html";
           }).catch(function(error) {
